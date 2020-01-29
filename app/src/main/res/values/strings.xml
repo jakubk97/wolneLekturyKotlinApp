@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Wolne lektury API</string>
+    <string name="default_error">Network error</string>
+</resources>

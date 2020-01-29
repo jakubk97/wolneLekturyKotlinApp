@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_books"
+        android:title="Książki"/>
+    <item
+        android:id="@+id/action_audiobooks"
+        android:title="Audiobooki" />
+    <item
+        android:id="@+id/action_authors"
+        android:title="Autorzy" />
+    <item
+        android:id="@+id/action_epochs"
+        android:title="Epoki" />
+</menu>
