@@ -9,6 +9,10 @@ import com.example.kuba.androidmvvm.R
 import com.example.kuba.androidmvvm.helpers.inflate
 import com.example.kuba.androidmvvm.mainView.model.BookModel
 import kotlinx.android.synthetic.main.recyclerview_item_row.view.*
+import kotlinx.android.synthetic.main.recyclerview_item_row.view.author
+import kotlinx.android.synthetic.main.recyclerview_item_row.view.genre
+import kotlinx.android.synthetic.main.recyclerview_item_row.view.title
+import kotlinx.android.synthetic.main.recyclerview_item_row_book.view.*
 
 class RecyclerAdapterBook(private val books: List<BookModel>) : RecyclerView.Adapter<RecyclerAdapterBook.BookHolder>() {
 
@@ -17,7 +21,7 @@ class RecyclerAdapterBook(private val books: List<BookModel>) : RecyclerView.Ada
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapterBook.BookHolder {
-        val inflatedView = parent.inflate(R.layout.recyclerview_item_row, false)
+        val inflatedView = parent.inflate(R.layout.recyclerview_item_row_book, false)
         return BookHolder(inflatedView)
     }
 
@@ -51,6 +55,14 @@ class RecyclerAdapterBook(private val books: List<BookModel>) : RecyclerView.Ada
             view.title.text = book.title
             view.author.text = book.author
             view.genre.text = book.kind
+            view.epoch.text = book.epoch
+            if(book.has_audio.equals("false")){
+                view.has_audio.text = "Książka nie posiada audiobooka"
+            }
+            else{
+                view.has_audio.text = "Książka posiada audiobooka"
+            }
+
         }
     }
 }

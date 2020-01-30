@@ -6,6 +6,7 @@
     android:id="@+id/rootLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".mainView.view.EpochActivity">
 
 
@@ -29,7 +30,7 @@
             app:fabSize="auto"
             android:contentDescription="Pobierz wszystkie epoki"
             android:text="Pobierz"
-            android:src="@drawable/ic_download"
+            android:src="@drawable/ic_collections_bookmark_black_24dp"
             app:layout_anchorGravity="bottom|right|end"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/recyclerView"/>
@@ -53,6 +54,7 @@
         android:hint="szukaj po nazwie..."
         android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/downloadButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -61,6 +63,7 @@
         android:layout_height="wrap_content"
         android:text="Szukaj"
         app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toStartOf="@+id/downloadButton"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

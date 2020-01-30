@@ -28,7 +28,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:contentDescription="Pobierz wszystkie audiobooki"
-        android:src="@drawable/ic_download"
+        android:src="@drawable/ic_collections_bookmark_black_24dp"
         android:text="Pobierz"
         android:tooltipText="Pobierz wszystkie audiobooki"
         app:backgroundTint="@color/colorPrimaryDark"

@@ -9,6 +9,10 @@ import com.example.kuba.androidmvvm.R
 import com.example.kuba.androidmvvm.helpers.inflate
 import com.example.kuba.androidmvvm.mainView.model.AudioBookModel
 import kotlinx.android.synthetic.main.recyclerview_item_row.view.*
+import kotlinx.android.synthetic.main.recyclerview_item_row.view.author
+import kotlinx.android.synthetic.main.recyclerview_item_row.view.genre
+import kotlinx.android.synthetic.main.recyclerview_item_row.view.title
+import kotlinx.android.synthetic.main.recyclerview_item_row_book.view.*
 
 class RecyclerAdapter(private val audioBooks: List<AudioBookModel>) : RecyclerView.Adapter<RecyclerAdapter.AudioBookHolder>() {
 
